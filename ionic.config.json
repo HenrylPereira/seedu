@@ -1,0 +1,7 @@
+{
+  "name": "seedu",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
