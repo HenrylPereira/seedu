@@ -1,0 +1,22 @@
+textarea:focus, input:focus, input, select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.body {
+  width: 100vw;
+  height: 100vh;
+  background: #2A98B0;
+}
+
+ion-item {
+  --border-raius: 32px;
+}
+
+input {
+  border-radius: 35px;
+  height: 64px;
+  width: 80vw;
+  display: inline-block;
+}

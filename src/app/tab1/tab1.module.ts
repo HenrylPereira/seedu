@@ -6,6 +6,8 @@ import { Tab1Page } from './tab1.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
+import { RecomendacaoSliderModule } from './recomendacao-slider/recomendacao-slider.module';
+import { MateriaSliderModule } from './materia-slider/materia-slider.module';
 
 @NgModule({
   imports: [
@@ -13,7 +15,9 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    Tab1PageRoutingModule
+    Tab1PageRoutingModule,
+    MateriaSliderModule,
+    RecomendacaoSliderModule
   ],
   declarations: [Tab1Page]
 })

@@ -1,0 +1,24 @@
+.slider {
+  margin-top: 70px;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: space-between;
+
+  .card {
+    height: 300px;
+    width: 270px;
+    flex: 0 0 auto;
+    background-color: deeppink;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 39px;
+  }
+}
+
+ion-label {
+  margin-left: 20px;
+}

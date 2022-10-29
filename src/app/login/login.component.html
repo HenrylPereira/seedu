@@ -1,0 +1,8 @@
+<div class="body">
+  <h1>Seedu</h1>
+  <form [formGroup]="login" (ngSubmit)="logForm()">
+    <input placeholder="Email" formControlName="email">
+    <input placeholder="Senha" type="password" formControlName="password">
+    <ion-button type="submit">Entrar</ion-button>
+  </form>
+</div>
