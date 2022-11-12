@@ -2,6 +2,6 @@
 <div class="slider">
   <ion-label>Materias</ion-label>
   <div class="scrolling-wrapper">
-    <div class="card" *ngFor="let card of cards$"></div>
+    <div class="card" *ngFor="let card of cards$" style="background-image: url({{card.image}})"></div>
   </div>
 </div>

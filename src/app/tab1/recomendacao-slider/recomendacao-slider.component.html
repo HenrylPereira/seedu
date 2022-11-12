@@ -2,7 +2,6 @@
 <div class="slider">
   <ion-label>Recomendações</ion-label>
   <div class="scrolling-wrapper">
-    <div class="card"></div>
-    <div class="card"></div>
+    <div class="card" *ngFor="let card of cards$" style="background-image: url({{card.image}})"></div>
   </div>
 </div>

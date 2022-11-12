@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { RecomendacaoSliderInterface } from './interfaces/recomendacao-slider.interface';
+import { RecomendacaoSliderService } from './services/recomendacao-slider.service';
 
 @Component({
   selector: 'app-recomendacao-slider',
@@ -6,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recomendacao-slider.component.scss'],
 })
 export class RecomendacaoSliderComponent implements OnInit {
+  cards$: any;
 
-  constructor() { }
+  constructor(private recomendacaoSliderService: RecomendacaoSliderService) { }
 
-  ngOnInit() {}
-
+  ngOnInit() {
+    this.recomendacaoSliderService.getMaterias().subscribe((cards)=>{
+      this.cards$ = cards;
+    });
+  }
 }
