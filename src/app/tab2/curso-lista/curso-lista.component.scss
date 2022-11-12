@@ -1,6 +1,19 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 900px;
+  margin-top: 20px;
+}
+
+
 .curso-lista {
   margin-top: 10px;
   width: 100vw;
   height: 20%;
   background-color: rgb(201, 201, 201);
+
+  .imagem {
+    margin-top: 20px;
+  }
 }

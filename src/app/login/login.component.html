@@ -1,8 +1,26 @@
 <div class="body">
-  <h1>Seedu</h1>
+  <div class="firstContainer">
+    <h1 class="title">seedu</h1>
+  </div>
   <form [formGroup]="login" (ngSubmit)="logForm()">
-    <input placeholder="Email" formControlName="email">
-    <input placeholder="Senha" type="password" formControlName="password">
-    <ion-button type="submit">Entrar</ion-button>
+    <div class="firstInput">
+    <input placeholder="E-mail" formControlName="email">
+    </div>
+    <div class="secondInput">
+      <input placeholder="Senha" type="password" formControlName="password">
+    </div>
+    <div class="buttonsSpace">
+      <button class="firstButton" type="submit">Entrar</button>
+
+      <button class="secondButton" type="submit" >
+          <img class="iconButton" src="../../assets/icon/google.svg" alt="">
+        Sign In
+      </button>
+
+      <div class="footer">
+        <p>Esqueceu a Senha?</p>
+      </div>
+
+    </div>
   </form>
 </div>

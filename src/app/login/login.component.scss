@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap%27');
+
+
 textarea:focus, input:focus, input, select:focus {
   box-shadow: 0 0 0 0;
   border: 0 none;
@@ -10,13 +13,77 @@ textarea:focus, input:focus, input, select:focus {
   background: #2A98B0;
 }
 
-ion-item {
-  --border-raius: 32px;
-}
 
 input {
   border-radius: 35px;
-  height: 64px;
+  height: 54px;
   width: 80vw;
   display: inline-block;
+}
+
+.firstContainer{
+  height: 300px;
+}
+
+.title {
+  text-align: center;
+  padding: 110px;
+  font-size: 55px;
+  color: white;
+}
+
+.firstInput{
+  padding-left: 40px;
+  padding-bottom: 25px;
+}
+
+.secondInput{
+  padding-left: 40px;
+}
+
+input::placeholder {
+  color: #2A98B0;
+  font-size: 23px;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.buttonsSpace{
+  padding-top: 80px;
+  padding-left: 51px;
+}
+
+.firstButton{
+  margin-left: 12px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  height: 54px;
+  width: 69vw;
+  border-radius: 55px;
+  background-color: #2A98B0;
+  border: solid 2px white;
+}
+
+.secondButton{
+  margin-left: 12px;
+  margin-top: 20px;
+  padding-right: 20px;
+  color: rgba(116, 116, 116, 1);
+  font-size: 20px;
+  font-weight: bold;
+  height: 54px;
+  width: 69vw;
+  border-radius: 55px;
+  background-color: white;
+}
+
+.iconButton{
+  color: rgba(116, 116, 116, 1);
+}
+
+.footer{
+  color: white;
+  padding-left: 80px;
 }
