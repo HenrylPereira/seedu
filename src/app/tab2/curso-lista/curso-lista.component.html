@@ -1,6 +1,18 @@
 <div class="flex-container">
-  <div class="curso-lista">
-    <img src="https://imgur.com/BoSWyiA.png" alt="" class="imagem">
+  <div class="curso-lista" *ngFor="let curso of cursos$">
+    <img src="{{curso.image}}" alt="" class="imagem">
+    <h1 class="titlee">{{curso.nome}}</h1>
+    <div class="progress">
+      <div class="bar" style="width:35%">
+        <p class="percent">35%</p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="btns">
+      <button>Ver conteúdo</button>
+      <button>Continuar</button>
+    </div>
   </div>
 </div>
 

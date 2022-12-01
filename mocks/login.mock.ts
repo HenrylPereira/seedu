@@ -3,7 +3,7 @@ import { LoginInterface } from 'src/app/login/interfaces/login.interface';
 export const dadosLogin: LoginInterface[] = [
   {
     id: '1',
-    email: 'henry@totvs.com.br',
+    email: 'henry.pereira@totvs.com.br',
     password: '2'
   },
   {
