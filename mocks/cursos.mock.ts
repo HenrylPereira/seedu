@@ -11,13 +11,13 @@ export const dadosCurso: CursoInterface[] = [
   {
     id: '2',
     nome: 'Matemática',
-    image: 'https://imgur.com/BoSWyiA.png',
+    image: 'https://imgur.com/dP8wrSm.png',
     progresso: 60
   },
   {
     id: '3',
-    nome: 'Quimica',
-    image: 'https://imgur.com/BoSWyiA.png',
+    nome: 'Física',
+    image: 'https://imgur.com/vCieJqe.png',
     progresso: 60
   }
 ];
