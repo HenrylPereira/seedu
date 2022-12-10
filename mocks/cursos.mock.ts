@@ -4,7 +4,7 @@ import { CursoInterface } from 'src/app/tab2/curso-lista/interfaces/curso-lista.
 export const dadosCurso: CursoInterface[] = [
   {
     id: '1',
-    nome: 'Bioogia',
+    nome: 'Biologia',
     image: 'https://imgur.com/BoSWyiA.png',
     progresso: 50
   },

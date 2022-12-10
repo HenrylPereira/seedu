@@ -1,0 +1,20 @@
+
+.video-frame {
+  position: relative;
+  margin: 0%;
+}
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: space-between;
+
+  .card {
+    height: 100px;
+    width: 100px;
+    flex: 0 0 auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 21px;
+  }
+}

@@ -8,6 +8,7 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { Tab2PageRoutingModule } from './tab2-routing.module';
 import { CursoListaModule } from './curso-lista/curso-lista.module';
+import { CursoModule } from './curso/curso.module';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { CursoListaModule } from './curso-lista/curso-lista.module';
     FormsModule,
     ExploreContainerComponentModule,
     Tab2PageRoutingModule,
-    CursoListaModule
+    CursoListaModule,
+    CursoModule
   ],
   declarations: [Tab2Page]
 })
