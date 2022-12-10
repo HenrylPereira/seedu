@@ -1,10 +1,13 @@
 <div class="video-frame">
   <iframe width="400" height="315" src="https://www.youtube.com/embed/ZZXcTQpbdaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+<h4 class="etapa">Etapas</h4>
 <div class="container">
   <div class="flex-conteiner">
-    <div class="flex-item"></div>
-    <div class="flex-item"></div>
+    <div class="flex-item" *ngFor="let card of cards$">
+      <h4 class="title">{{card.title}}</h4>
+      <h4 class="duracao">{{card.duracao}}</h4>
+    </div>
   </div>
 </div>
 

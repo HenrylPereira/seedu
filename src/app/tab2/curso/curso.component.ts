@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModuloGetInterface } from './interfaces/modulo-get.interface';
+import { ModuloGetAllService } from './services/modulo-get-all.service';
 
 @Component({
   selector: 'app-curso',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CursoComponent implements OnInit {
 
-  constructor() { }
+  cards$!: ModuloGetInterface[];
 
-  ngOnInit() {
+  constructor(private moduloGetAllService: ModuloGetAllService) { }
+
+  ngOnInit(): void {
+    this.search();
   }
 
+  search(){
+    this.moduloGetAllService.getModulos().subscribe((card)=>{
+      this.cards$ = card;
+    });
+  }
 }

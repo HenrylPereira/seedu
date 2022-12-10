@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CursoComponent } from './curso.component';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
   declarations: [ CursoComponent ],
   imports: [
-    CommonModule
+    CommonModule,
+    IonicModule
   ],
   exports: [ CursoComponent ]
 })
