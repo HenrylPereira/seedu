@@ -5,9 +5,50 @@
 <div class="container">
   <div class="flex-conteiner">
     <div class="flex-item" *ngFor="let card of cards$">
-      <h4 class="title">{{card.title}}</h4>
+      {{card.svg}}
+      <h4 class="title" (click)="setOpen(true)">{{card.title}}</h4>
       <h4 class="duracao">{{card.duracao}}</h4>
     </div>
   </div>
 </div>
+
+<ion-modal [isOpen]="isModalOpen">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="end">
+          <ion-button (click)="setOpen(false)">Close</ion-button>
+        </ion-buttons>
+        <ion-title>Atividade</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <p>
+        Mário pretende realizar uma viagem utilizando um veículo cujo consumo médio de combustível é de 10 Km/L.
+         Sabendo que percorrerá 300 000 m, é correto afirmar que o volume de combustível a ser consumido será de:
+      </p>
+      <ion-item>
+        <ion-checkbox slot="start"></ion-checkbox>
+        <ion-label>a) 10 litros.</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox slot="start"></ion-checkbox>
+        <ion-label>b) 12 litros.</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox slot="start"></ion-checkbox>
+        <ion-label>c) 15 litros.</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox slot="start"></ion-checkbox>
+        <ion-label>d) 25 litros.</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox slot="start"></ion-checkbox>
+        <ion-label>e) 30 litros.</ion-label>
+      </ion-item>
+      <ion-button (click)="responder()">Responder</ion-button>
+    </ion-content>
+  </ng-template>
+</ion-modal>
 

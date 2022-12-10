@@ -1,5 +1,6 @@
 import { CursoGetAllService } from './services/curso-get-all.service';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-curso-lista',
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class CursoListaComponent implements OnInit {
   cursos$: any;
 
-  constructor(private cursoGetAllService: CursoGetAllService) { }
+  constructor(private cursoGetAllService: CursoGetAllService, private router: Router) { }
 
   ngOnInit() {
     this.pesquisar();
@@ -26,5 +27,9 @@ export class CursoListaComponent implements OnInit {
         this.cursos$ = curso;
       });
     }
+  }
+
+  public abrirCurso(id: string){
+    this.router.navigate(['app/cursos/curso']);
   }
 }

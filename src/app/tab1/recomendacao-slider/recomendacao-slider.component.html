@@ -2,6 +2,6 @@
 <div class="slider">
   <ion-label>Recomendações</ion-label>
   <div class="scrolling-wrapper">
-    <div class="card" *ngFor="let card of cards$" style="background-image: url({{card.image}})"></div>
+    <div class="card" *ngFor="let card of cards$" style="background-image: url({{card.image}})" (click)="abrirCurso(card.id)"></div>
   </div>
 </div>

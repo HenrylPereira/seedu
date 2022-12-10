@@ -22,7 +22,7 @@ export class LoginComponent {
   }
 
   navigate(): void {
-    this.router.navigate(['tabs']);
+    this.router.navigate(['app']);
   }
 
   logForm() {
