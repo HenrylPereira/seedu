@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap%27%27');
+
+.header{
+    padding-top: 30px;
+    padding-left: 25px;
+}
+
+.title{
+    color: rgba(113, 125, 147, 1);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.rotateLine{
+    overflow: hidden;
+    position: absolute;
+    width: 110vw;
+    height: 10vh;
+    background: #2A98B0;
+    transform: rotate(-3deg)
+}
+
+.container{
+    margin-top: 21px;
+    width: 100vw;
+    height: 80vh;
+    background: #2A98B0;
+    display: flex;
+}
+
+.containerBox{
+    margin-top: 120px;
+    width: 100vw;
+    height: 10vh;
+    background: #3ba4bb;
+    display: flex;
+    justify-content: space-between;
+}
+
+.picture{
+    position: relative;
+    bottom: 10px;
+    left: 15px;
+    width: 16vw;
+    height: 8vh;
+    background: #ffffff;
+    clip-path: circle();
+}
+
+.nameProBox{
+    position: relative;
+    right: 67px;
+}
+
+.nameProf{
+    position: relative;
+    font-size: 20px;
+    left: 25px;
+    bottom: 15px;
+    color: white;
+}
+
+.nameMateria{
+    position: relative;
+    bottom: 34px;
+    left: 26px;
+    color: white;
+    font-size: 13px;
+}
+
+.messageNumber{
+    position: relative;
+    top: 9px;
+    right: 10px;
+    width: 16vw;
+    height: 3.3vh;
+    background: #2A98B0;
+    clip-path: circle();
+}
+
+.centerNumber{
+    position: relative;
+    bottom: 10px;
+    left: 27px;
+    color: white;
+    font-size: 16px;
+}
+
+.iconPng{
+    position: relative;
+    top: 10px;
+    left: 9px;
+}
